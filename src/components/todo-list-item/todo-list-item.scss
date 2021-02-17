@@ -1,0 +1,38 @@
+.todo-list-item {
+  display: flex;
+  align-items: center;
+  font-size: 1.25rem;
+  button {
+    width: 34px;
+    margin-left: 6px;
+  }
+}
+
+.list-group-item {
+  padding: .5rem .75rem;
+}
+
+.todo-list-item-label {
+  flex: 1 0 auto;
+  user-select: none;
+  margin-right: .75rem;
+  cursor: pointer;
+  transition: color .3s;
+  color: #000;
+  &:hover {
+    color: red;
+  }
+}
+
+.done {
+  .todo-list-item-label {
+    text-decoration: line-through;
+  }
+}
+
+.important {
+  .todo-list-item-label {
+    font-weight: 700;
+    color: steelblue;
+  }
+}
